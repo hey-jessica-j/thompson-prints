@@ -65,7 +65,7 @@ const updateHomePage = async function() {
   main.classList.add("home-picture");
   typeWriterEffect(quoteTextElement, worldText, true);
 
-  await sleep(8000);
+  await sleep(9000);
 
   typeWriterEffect(quoteTextElement, creativityText, false);
 };

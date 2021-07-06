@@ -1,3 +1,13 @@
+/* Avaliable Fonts
+font-family: 'Courgette', cursive;
+font-family: 'Gloria Hallelujah', cursive;
+font-family: 'Roboto Mono', monospace;
+font-family: 'Shadows Into Light Two', cursive;
+
+*/
+
+
+
 nav {
   background-color: #282828;
   text-align: right;
@@ -67,8 +77,8 @@ h3 {
 
 .home h3 {
   display: inline;
-  font-family: 'Shadows Into Light', cursive;
-  font-size: 3em;
+  font-family: 'Roboto Mono', monospace;
+  font-size: 4em;
   height: 100px;
   width: 100%;
   padding: auto;
@@ -83,7 +93,7 @@ h3 {
 .home {
   background-image: url("../img/background2.jpg");
   background-size: cover;
-  background-position: center;
+  background-position: right;
   align-items: center;
   text-align: center;
 }
@@ -93,9 +103,10 @@ h3 {
 }
 
 #make-tee-picture {
-  position: sticky;
+  position: fixed;
   height: 55%;
-  padding-top: 7vh;
+  bottom: 3vh;
+  left: 40%;
 }
 
 
