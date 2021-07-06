@@ -1,0 +1,114 @@
+nav {
+  background-color: #282828;
+  text-align: right;
+  position: relative;
+  height: 7vh;
+}
+
+nav ul {
+  width: 90%;
+  margin: 0;
+  padding: 2vh;
+}
+
+nav li {
+  font-family: 'Gloria Hallelujah', cursive;
+  color: white;
+  display: inline;
+  text-decoration: none;
+  padding: 1.5vh;
+
+}
+
+footer {
+  background-color: #282828;
+  height: 7vh;
+  text-align: center;
+  position: relative;
+}
+
+footer p {
+    font-family: 'Gloria Hallelujah', cursive;
+    margin: 0;
+    color: white;
+    padding-top: 2vh;
+}
+
+/* Animations*/
+
+@keyframes reveal {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+    }
+}
+
+/* Home page edits*/
+main {
+  font-size: 16px;
+  width: 100%;
+  height: 86vh;
+  animation: reveal 5s;
+}
+
+h1,
+h3 {
+  margin: 0;
+}
+
+.home h1 {
+  font-family: 'Courgette', cursive;
+  font-size: 5em;
+  height: 200px;
+  padding-top: 50px;
+}
+
+.home h3 {
+  display: inline;
+  font-family: 'Shadows Into Light', cursive;
+  font-size: 3em;
+  height: 100px;
+  width: 100%;
+  padding: auto;
+  text-align: center;
+  position: sticky;
+}
+
+.home div {
+
+}
+
+.home {
+  background-image: url("../img/background2.jpg");
+  background-size: cover;
+  background-position: center;
+  align-items: center;
+  text-align: center;
+}
+
+.home-picture {
+
+}
+
+#make-tee-picture {
+  position: sticky;
+  height: 55%;
+  padding-top: 7vh;
+}
+
+
+.reveal-animate {
+  animation: reveal 5s;
+  animation-delay: 10s;
+  animation-fill-mode: forwards;
+  opacity: 0;
+}
+
+
+/*  while (i < length) {
+    quoteTextElement.innerHTML += text.charAt(i);
+    i++;
+    setTimeout(typeWriterEffect, speed);
+  }*/
