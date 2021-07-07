@@ -29,4 +29,4 @@ const deleteSentence = async function (element) {
   }
 };
 
-export {typeSentence, deleteSentence};
+export {typeSentence, deleteSentence, sleep};
