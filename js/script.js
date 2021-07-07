@@ -1,4 +1,4 @@
-import {typeSentence, deleteSentence} from "./typingEffect.js";
+import {typeSentence, deleteSentence, sleep} from "./typingEffect.js";
 
 
 const body = document.querySelector("body");
