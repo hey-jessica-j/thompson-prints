@@ -55,6 +55,21 @@ footer p {
     }
 }
 
+@keyframes blink {
+    0% {opacity: 1;}
+    40% {opacity: 1;}
+    60% {opacity: 0;}
+    100% {opacity: 0;}
+  }
+
+
+
+
+
+/***************************                      ***************************/
+
+
+
 /* Home page edits*/
 main {
   font-size: 16px;
@@ -70,45 +85,44 @@ h3 {
 
 .home h1 {
   font-family: 'Courgette', cursive;
-  font-size: 5em;
-  height: 200px;
+  font-size: 3em;
+  height: 25vh;
   padding-top: 50px;
 }
 
 .home h3 {
   display: inline;
   font-family: 'Roboto Mono', monospace;
-  font-size: 4em;
+  font-size: 1.5em;
   height: 100px;
-  width: 100%;
-  padding: auto;
+  padding: 8%;
   text-align: center;
   position: sticky;
 }
 
-.home div {
-
+.input-cursor {
+    display: inline-block;
+    width: 2px;
+    height: 56px;
+    background-color: black;
+    margin-left: 8px;
+    animation: blink .6s linear infinite alternate;
 }
 
 .home {
   background-image: url("../img/background2.jpg");
   background-size: cover;
-  background-position: right;
+  background-position: center;
   align-items: center;
   text-align: center;
 }
 
-.home-picture {
-
-}
-
 #make-tee-picture {
   position: fixed;
-  height: 55%;
-  bottom: 3vh;
-  left: 40%;
+  height: 40%;
+  bottom: 6vh;
+  left: 30%;
 }
-
 
 .reveal-animate {
   animation: reveal 5s;
@@ -117,9 +131,64 @@ h3 {
   opacity: 0;
 }
 
+/***************************      Tablet Styles      ***************************/
 
-/*  while (i < length) {
-    quoteTextElement.innerHTML += text.charAt(i);
-    i++;
-    setTimeout(typeWriterEffect, speed);
-  }*/
+@media only screen and (min-width: 768px) {
+    .home h1 {
+      font-family: 'Courgette', cursive;
+      font-size: 3em;
+      height: 15vh;
+      padding-top: 50px;
+    }
+
+    .home h3 {
+      display: inline;
+      font-family: 'Roboto Mono', monospace;
+      font-size: 2em;
+      height: 100px;
+      width: 100%;
+      padding: auto;
+      text-align: center;
+      position: sticky;
+    }
+
+    #make-tee-picture {
+      position: fixed;
+      height: 50%;
+      bottom: 3vh;
+      left: 37%;
+    }
+
+}
+
+/***************************    Desktop Styles      ***************************/
+
+@media only screen and (min-width: 1200px) {
+    /* Home page edits*/
+
+    .home h1 {
+      font-family: 'Courgette', cursive;
+      font-size: 5em;
+      height: 15vh;
+      padding-top: 50px;
+    }
+
+    .home h3 {
+      display: inline;
+      font-family: 'Roboto Mono', monospace;
+      font-size: 7em;
+      height: 100px;
+      width: 100%;
+      padding: auto;
+      text-align: center;
+      position: sticky;
+    }
+
+    #make-tee-picture {
+      position: fixed;
+      height: 55%;
+      bottom: 3vh;
+      left: 40%;
+    }
+
+}
