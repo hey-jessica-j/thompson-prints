@@ -1,3 +1,5 @@
+import {typeSentence, deleteSentence} from "./typingEffect.js";
+
 
 const body = document.querySelector("body");
 const main = document.querySelector("main");
@@ -9,39 +11,12 @@ const makeTeeElement = document.getElementById("make-tee");
 const aboutElement = document.getElementById("about");
 const contactElement = document.getElementById("contact");
 
-//
-const sentenceElement = document.getElementById("sentence");
 
+
+//Creates the typing headline in document
+const sentenceElement = document.getElementById("sentence");
 const worldText = "It's your world ...";
 const creativityText = "Let your creativity run free. . . ";
-let delay = 100;
-
-const typeSentence = async function (text, element) {
-  const letters = text.split("");
-  let i = 0;
-  while (i < letters.length) {
-    await sleep(delay);
-    element.append(letters[i]);
-    //element.append(letters[i]);
-    i++
-  }
-  return;
-};
-
-const deleteSentence = async function (element) {
-  const text = element.innerText;
-  const letters = text.split("");
-  let i = 0;
-  while (letters.length > 0) {
-    await sleep(delay);
-    letters.pop();
-    element.innerText = letters.join("");
-  }
-}
-
-function sleep(ms) {
-  return new Promise(resolve => setTimeout(resolve, ms));
-};
 
 const typeQuoteSentence = async function () {
   await sleep(1000);
