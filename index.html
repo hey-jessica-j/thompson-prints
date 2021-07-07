@@ -14,12 +14,14 @@
             crossorigin="anonymous" />
         <link rel="stylesheet" href="css/normalize.css" />
         <link rel="stylesheet" href="css/styles.css" />
-        <script src="js/script.js" defer></script>
+        <script src="js/script.js" type="module" defer></script>
 
         <!-- Google Fonts -->
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Courgette&family=Gloria+Hallelujah&family=Shadows+Into+Light&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Courgette&family=Gloria+Hallelujah&family=Roboto+Mono:wght@100&family=Shadows+Into+Light+Two&display=swap" rel="stylesheet">
     </head>
 
     <body>
@@ -35,11 +37,16 @@
         </nav>
       </header>
         <main class= "home container">
-          <div class="header">
-            <h1 class= "reveal-animate" id="title">Thompson Prints</h1>
-            <h3 id="quote-text">  </h3>
+          <div class="quote-block">
+            <h1 class= "reveal-animate">Thompson Prints</h1>
+            <h3>
+              <span id="sentence"> </span>
+              <span class="input-cursor"></span>
+            </h3>
           </div>
+          <div class="">
             <img class= "reveal-animate" id="make-tee-picture" src="img/figure1.png"/>
+          </div>
         </main>
       <footer>
         <p>Thompson Prints</p>
